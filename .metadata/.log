@@ -1,0 +1,1790 @@
+!SESSION 2012-09-21 17:34:49.786 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_01
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 17:36:03.993
+!MESSAGE Failed to load properties file for project 'SwengTutorial'
+
+!ENTRY org.eclipse.debug.core 4 2 2012-09-21 17:54:03.585
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.activate(JavaDebugOptionsManager.java:668)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchChanged(JavaDebugOptionsManager.java:683)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchAdded(JavaDebugOptionsManager.java:677)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:447)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:435)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:997)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:695)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:842)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.aspectj.bridge.AbortException: trouble in: 
+public class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure extends java.lang.Object implements org.eclipse.debug.core.ILogicalStructureType:
+  private static org.eclipse.debug.core.IStatusHandler fgStackFrameProvider
+  private String fType
+  private boolean fSubtypes
+  private String fValue
+  private String fDescription
+  private String[][] fVariables
+  private String fContributingPluginId
+  static Class class$0 [Synthetic]
+  static Class class$1 [Synthetic]
+  public void <init>(String, boolean, String, String, String[][]):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 181)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String[][]))
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 80)
+    |               ACONST_NULL
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 182)
+    |               ALOAD_1     // Ljava/lang/String; type
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 183)
+    |               ILOAD_2     // Z subtypes
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 184)
+    |               ALOAD_3     // Ljava/lang/String; value
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 185)
+    |               ALOAD 4     // Ljava/lang/String; description
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 186)
+    |               ALOAD 5     // [[Ljava/lang/String; variables
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               RETURN   (line 187)
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String[][]))
+  end public void <init>(String, boolean, String, String, String[][])
+
+  public void <init>(org.eclipse.core.runtime.IConfigurationElement) throws org.eclipse.core.runtime.CoreException:
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 192)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(org.eclipse.core.runtime.IConfigurationElement))
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 80)
+    |               ACONST_NULL
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 193)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "type"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 194)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               IFNONNULL L0
+    |               NEW org.eclipse.core.runtime.CoreException   (line 195)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_0 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 197)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "subtypes"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | method-call(java.lang.Boolean java.lang.Boolean.valueOf(java.lang.String))
+    | |             INVOKESTATIC java.lang.Boolean.valueOf (Ljava/lang/String;)Ljava/lang/Boolean;
+    | method-call(java.lang.Boolean java.lang.Boolean.valueOf(java.lang.String))
+    | method-call(boolean java.lang.Boolean.booleanValue())
+    | |             INVOKEVIRTUAL java.lang.Boolean.booleanValue ()Z
+    | method-call(boolean java.lang.Boolean.booleanValue())
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 198)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "value"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 199)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "description"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 200)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               IFNONNULL L1
+    |               NEW org.eclipse.core.runtime.CoreException   (line 201)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_4 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L1: ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement   (line 203)
+    |               LDC "variable"
+    | method-call(org.eclipse.core.runtime.IConfigurationElement[] org.eclipse.core.runtime.IConfigurationElement.getChildren(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getChildren (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+    | method-call(org.eclipse.core.runtime.IConfigurationElement[] org.eclipse.core.runtime.IConfigurationElement.getChildren(java.lang.String))
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 204)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               IFNONNULL L2
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements
+    |               ARRAYLENGTH
+    |               IFNE L2
+    |               NEW org.eclipse.core.runtime.CoreException   (line 205)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_1 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L2: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 207)
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements
+    |               ARRAYLENGTH
+    |               ICONST_2
+    |               MULTIANEWARRAY [[Ljava.lang.String;
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ICONST_0   (line 208)
+    |               ISTORE_3
+    |               GOTO L6
+    |           L3: ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements   (line 209)
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               LDC "name"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/lang/String; variableName   (line 210)
+    |               IFNONNULL L4
+    |               NEW org.eclipse.core.runtime.CoreException   (line 211)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_2 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L4: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 213)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               ICONST_0
+    |               ALOAD 4     // Ljava/lang/String; variableName
+    |               AASTORE
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements   (line 214)
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               LDC "value"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/String; variableValue   (line 215)
+    |               IFNONNULL L5
+    |               NEW org.eclipse.core.runtime.CoreException   (line 216)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_3 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L5: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 218)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               ICONST_1
+    |               ALOAD 5     // Ljava/lang/String; variableValue
+    |               AASTORE
+    |               IINC_3 1     // I j   (line 208)
+    |           L6: ILOAD_3     // I j
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L3
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 220)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    | method-call(org.eclipse.core.runtime.IContributor org.eclipse.core.runtime.IConfigurationElement.getContributor())
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getContributor ()Lorg/eclipse/core/runtime/IContributor;
+    | method-call(org.eclipse.core.runtime.IContributor org.eclipse.core.runtime.IConfigurationElement.getContributor())
+    | method-call(java.lang.String org.eclipse.core.runtime.IContributor.getName())
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IContributor.getName ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IContributor.getName())
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               RETURN   (line 221)
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(org.eclipse.core.runtime.IConfigurationElement))
+  end public void <init>(org.eclipse.core.runtime.IConfigurationElement) throws org.eclipse.core.runtime.CoreException
+
+  public boolean providesLogicalStructure(org.eclipse.debug.core.model.IValue):
+    method-execution(boolean org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.providesLogicalStructure(org.eclipse.debug.core.model.IValue))
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 227)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaObject
+    |               IFNE L0
+    |               ICONST_0   (line 228)
+    |               IRETURN
+    |           L0: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 230)
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaObject
+    | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType (Lorg/eclipse/jdt/debug/core/IJavaObject;)Lorg/eclipse/jdt/debug/core/IJavaReferenceType;
+    | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    |               IFNULL L1
+    |               ICONST_1
+    |               IRETURN
+    |           L1: ICONST_0
+    |               IRETURN
+    method-execution(boolean org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.providesLogicalStructure(org.eclipse.debug.core.model.IValue))
+  end public boolean providesLogicalStructure(org.eclipse.debug.core.model.IValue)
+
+  public org.eclipse.debug.core.model.IValue getLogicalStructure(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException:
+    method-execution(org.eclipse.debug.core.model.IValue org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(org.eclipse.debug.core.model.IValue))
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 237)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaObject
+    |               IFNE L0
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 238)
+    |               ARETURN
+    |           L0: ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 240)
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaObject
+    |               ASTORE_2
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 242)
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | | |           INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType (Lorg/eclipse/jdt/debug/core/IJavaObject;)Lorg/eclipse/jdt/debug/core/IJavaReferenceType;
+    | | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | |             ASTORE_3
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type   (line 243)
+    | |             IFNONNULL L1
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 244)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |         L1: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 246)
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | | method-call(org.eclipse.jdt.debug.core.IJavaStackFrame org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame(org.eclipse.debug.core.model.IValue))
+    | | |           INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame (Lorg/eclipse/debug/core/model/IValue;)Lorg/eclipse/jdt/debug/core/IJavaStackFrame;
+    | | method-call(org.eclipse.jdt.debug.core.IJavaStackFrame org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame(org.eclipse.debug.core.model.IValue))
+    | |             ASTORE 4
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 247)
+    | |             IFNONNULL L2
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 248)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |         L2: ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue   (line 252)
+    | | method-call(org.eclipse.debug.core.ILaunch org.eclipse.jdt.debug.core.IJavaObject.getLaunch())
+    | | |           INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaObject.getLaunch ()Lorg/eclipse/debug/core/ILaunch;
+    | | method-call(org.eclipse.debug.core.ILaunch org.eclipse.jdt.debug.core.IJavaObject.getLaunch())
+    | | method-call(org.eclipse.debug.core.model.ISourceLocator org.eclipse.debug.core.ILaunch.getSourceLocator())
+    | | |           INVOKEINTERFACE org.eclipse.debug.core.ILaunch.getSourceLocator ()Lorg/eclipse/debug/core/model/ISourceLocator;
+    | | method-call(org.eclipse.debug.core.model.ISourceLocator org.eclipse.debug.core.ILaunch.getSourceLocator())
+    | |             ASTORE 5
+    | |             ACONST_NULL   (line 253)
+    | |             ASTORE 6
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 254)
+    | |             INSTANCEOF org.eclipse.debug.core.sourcelookup.ISourceLookupDirector
+    | |             IFEQ L5
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type   (line 255)
+    | |             ACONST_NULL
+    | | method-call(java.lang.String[] org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths(java.lang.String))
+    | | |           INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths (Ljava/lang/String;)[Ljava/lang/String;
+    | | method-call(java.lang.String[] org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths(java.lang.String))
+    | |             ASTORE 7
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths   (line 256)
+    | |             IFNULL L3
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths
+    | |             ARRAYLENGTH
+    | |             IFLE L3
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 257)
+    | |             CHECKCAST org.eclipse.debug.core.sourcelookup.ISourceLookupDirector
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths
+    | |             ICONST_0
+    | |             AALOAD
+    | | method-call(java.lang.Object org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement(java.lang.Object))
+    | | |           INVOKEINTERFACE org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement (Ljava/lang/Object;)Ljava/lang/Object;
+    | | method-call(java.lang.Object org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement(java.lang.Object))
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L3: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 259)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFNE L5
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement
+    | |             INSTANCEOF org.eclipse.core.runtime.IAdaptable
+    | |             IFEQ L5
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 260)
+    | |             CHECKCAST org.eclipse.core.runtime.IAdaptable
+    | |             GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             DUP
+    | |             IFNONNULL L4
+    | |             POP
+    | | catch java.lang.ClassNotFoundException -> E0
+    | | |           LDC "org.eclipse.jdt.core.IJavaElement"
+    | | |           INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    | | catch java.lang.ClassNotFoundException -> E0
+    | |             DUP
+    | |             PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             GOTO L4
+    | |         E0: NEW java.lang.NoClassDefFoundError
+    | |             DUP_X1
+    | |             SWAP
+    | |             INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+    | |             INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+    | |             ATHROW
+    | |         L4: INVOKEINTERFACE org.eclipse.core.runtime.IAdaptable.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L5: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 263)
+    | |             IFNONNULL L7
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 264)
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.debug.core.model.ISourceLocator.getSourceElement (Lorg/eclipse/debug/core/model/IStackFrame;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 265)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFNE L7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement
+    | |             INSTANCEOF org.eclipse.core.runtime.IAdaptable
+    | |             IFEQ L7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 266)
+    | |             CHECKCAST org.eclipse.core.runtime.IAdaptable
+    | |             GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             DUP
+    | |             IFNONNULL L6
+    | |             POP
+    | | catch java.lang.ClassNotFoundException -> E1
+    | | |           LDC "org.eclipse.jdt.core.IJavaElement"
+    | | |           INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    | | catch java.lang.ClassNotFoundException -> E1
+    | |             DUP
+    | |             PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             GOTO L6
+    | |         E1: NEW java.lang.NoClassDefFoundError
+    | |             DUP_X1
+    | |             SWAP
+    | |             INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+    | |             INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+    | |             ATHROW
+    | |         L6: INVOKEINTERFACE org.eclipse.core.runtime.IAdaptable.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L7: ACONST_NULL   (line 269)
+    | |             ASTORE 7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 270)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFEQ L8
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 271)
+    | |             CHECKCAST org.eclipse.jdt.core.IJavaElement
+    | |             INVOKEINTERFACE org.eclipse.jdt.core.IJavaElement.getJavaProject ()Lorg/eclipse/jdt/core/IJavaProject;
+    | |             ASTORE 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |             GOTO L9
+    | |         L8: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 272)
+    | |             INSTANCEOF org.eclipse.core.resources.IResource
+    | |             IFEQ L9
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 273)
+    | |             CHECKCAST org.eclipse.core.resources.IResource
+    | |             INVOKEINTERFACE org.eclipse.core.resources.IResource.getProject ()Lorg/eclipse/core/resources/IProject;
+    | |             INVOKESTATIC org.eclipse.jdt.core.JavaCore.create (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/jdt/core/IJavaProject;
+    | |             ASTORE 8
+    | |             ALOAD 8     // Lorg/eclipse/jdt/core/IJavaProject; resourceProject   (line 274)
+    | |             INVOKEINTERFACE org.eclipse.jdt.core.IJavaProject.exists ()Z
+    | |             IFEQ L9
+    | |             ALOAD 8     // Lorg/eclipse/jdt/core/IJavaProject; resourceProject   (line 275)
+    | |             ASTORE 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |         L9: ALOAD 7     // Lorg/eclipse/jdt/core/IJavaProject; project   (line 278)
+    | |             IFNONNULL L10
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 279)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |        L10: INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getDefault ()Lorg/eclipse/jdt/internal/debug/core/JDIDebugPlugin;   (line 282)
+    | |             ALOAD 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaStackFrame.getDebugTarget ()Lorg/eclipse/debug/core/model/IDebugTarget;
+    | |             CHECKCAST org.eclipse.jdt.debug.core.IJavaDebugTarget
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getEvaluationEngine (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine;
+    | |             ASTORE 8
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock   (line 284)
+    | |             DUP
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaStackFrame.getThread ()Lorg/eclipse/debug/core/model/IThread;
+    | |             CHECKCAST org.eclipse.jdt.debug.core.IJavaThread
+    | |             ALOAD 8     // Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine; evaluationEngine
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.<init> (Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure;Lorg/eclipse/jdt/debug/core/IJavaObject;Lorg/eclipse/jdt/debug/core/IJavaReferenceType;Lorg/eclipse/jdt/debug/core/IJavaThread;Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine;)V
+    | |             ASTORE 9
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 285)
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    | |             IFNONNULL L13
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 287)
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ARRAYLENGTH
+    | |             ANEWARRAY org.eclipse.jdt.debug.core.IJavaVariable
+    | |             ASTORE 10
+    | |             ICONST_0   (line 288)
+    | |             ISTORE 11
+    | |             GOTO L12
+    | |        L11: ALOAD 10     // [Lorg/eclipse/jdt/debug/core/IJavaVariable; variables   (line 289)
+    | |             ILOAD 11     // I i
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.JDIPlaceholderVariable
+    | |             DUP
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ILOAD 11     // I i
+    | |             AALOAD
+    | |             ICONST_0
+    | |             AALOAD
+    | |             ALOAD 9     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure$EvaluationBlock; evaluationBlock
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ILOAD 11     // I i
+    | |             AALOAD
+    | |             ICONST_1
+    | |             AALOAD
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate (Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JDIPlaceholderVariable.<init> (Ljava/lang/String;Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaValue;)V
+    | |             AASTORE
+    | |             IINC 11 1     // I i   (line 288)
+    | |        L12: ILOAD 11     // I i
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ARRAYLENGTH
+    | |             IF_ICMPLT L11
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalObjectStructureValue   (line 291)
+    | |             DUP
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             ALOAD 10     // [Lorg/eclipse/jdt/debug/core/IJavaVariable; variables
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalObjectStructureValue.<init> (Lorg/eclipse/jdt/debug/core/IJavaObject;[Lorg/eclipse/jdt/debug/core/IJavaVariable;)V
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |        L13: ALOAD 9     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure$EvaluationBlock; evaluationBlock   (line 294)
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate (Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+    | |             ASTORE 10
+    | |             ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 295)
+    | |             INSTANCEOF org.eclipse.jdt.internal.debug.core.model.JDIValue
+    | |             IFEQ L14
+    | |             ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 296)
+    | |             CHECKCAST org.eclipse.jdt.internal.debug.core.model.JDIValue
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.model.JDIValue.setLogicalParent (Lorg/eclipse/jdt/debug/core/IJavaValue;)V
+    | |        L14: ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 298)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    |           E6: ASTORE_3   (line 300)
+    |               ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 301)
+    |               INVOKEVIRTUAL org.eclipse.core.runtime.CoreException.getStatus ()Lorg/eclipse/core/runtime/IStatus;
+    |               INVOKEINTERFACE org.eclipse.core.runtime.IStatus.getCode ()I
+    |               BIPUSH 100
+    |               IF_ICMPNE L15
+    |               ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 302)
+    |               ATHROW
+    |          L15: ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 304)
+    |               INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.log (Ljava/lang/Throwable;)V
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 306)
+    |               ARETURN
+    method-execution(org.eclipse.debug.core.model.IValue org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(org.eclipse.debug.core.model.IValue))
+  end public org.eclipse.debug.core.model.IValue getLogicalStructure(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException
+
+  private org.eclipse.jdt.debug.core.IJavaReferenceType getType(org.eclipse.jdt.debug.core.IJavaObject):
+    catch org.eclipse.debug.core.DebugException -> E5
+    |               ALOAD_1     // Lorg/eclipse/jdt/debug/core/IJavaObject; value   (line 316)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaObject.getJavaType ()Lorg/eclipse/jdt/debug/core/IJavaType;
+    |               ASTORE_2
+    |               ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaType; type   (line 317)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaClassType
+    |               IFNE L0
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ACONST_NULL   (line 318)
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L0: ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaType; type   (line 320)
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaClassType
+    |               ASTORE_3
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 321)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L1
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 323)
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L1: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 325)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               IFNE L2
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ACONST_NULL   (line 327)
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L2: ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 329)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getSuperclass ()Lorg/eclipse/jdt/debug/core/IJavaClassType;
+    |               ASTORE 4
+    |               GOTO L5   (line 330)
+    |           L3: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 331)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L4
+    |               ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 333)
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L4: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 335)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getSuperclass ()Lorg/eclipse/jdt/debug/core/IJavaClassType;
+    |               ASTORE 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass
+    |           L5: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 330)
+    |               IFNONNULL L3
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 337)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getAllInterfaces ()[Lorg/eclipse/jdt/debug/core/IJavaInterfaceType;
+    |               ASTORE 5
+    |               ICONST_0   (line 338)
+    |               ISTORE 6
+    |               GOTO L8
+    |           L6: ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces   (line 339)
+    |               ILOAD 6     // I i
+    |               AALOAD
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaInterfaceType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L7
+    |               ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces   (line 341)
+    |               ILOAD 6     // I i
+    |               AALOAD
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L7: IINC 6 1     // I i   (line 338)
+    |           L8: ILOAD 6     // I i
+    |               ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L6
+    catch org.eclipse.debug.core.DebugException -> E5
+                    GOTO L9
+                E5: ASTORE_2   (line 344)
+                    ALOAD_2     // Lorg/eclipse/debug/core/DebugException; e   (line 345)
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.log (Ljava/lang/Throwable;)V
+                    ACONST_NULL   (line 346)
+                    ARETURN
+                L9: ACONST_NULL   (line 348)
+                    ARETURN
+  end private org.eclipse.jdt.debug.core.IJavaReferenceType getType(org.eclipse.jdt.debug.core.IJavaObject)
+
+  private org.eclipse.jdt.debug.core.IJavaStackFrame getStackFrame(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException:
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrameProvider ()Lorg/eclipse/debug/core/IStatusHandler;   (line 358)
+                    ASTORE_2
+                    ALOAD_2     // Lorg/eclipse/debug/core/IStatusHandler; handler   (line 359)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/eclipse/debug/core/IStatusHandler; handler   (line 360)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.STATUS_GET_EVALUATION_FRAME Lorg/eclipse/core/runtime/IStatus;
+                    ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value
+                    INVOKEINTERFACE org.eclipse.debug.core.IStatusHandler.handleStatus (Lorg/eclipse/core/runtime/IStatus;Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaStackFrame
+                    ASTORE_3
+                    ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 361)
+                    IFNULL L0
+                    ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 362)
+                    ARETURN
+                L0: ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 365)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IValue.getDebugTarget ()Lorg/eclipse/debug/core/model/IDebugTarget;
+                    ASTORE_3
+                    ALOAD_3     // Lorg/eclipse/debug/core/model/IDebugTarget; target   (line 366)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$1 Ljava/lang/Class;
+                    DUP
+                    IFNONNULL L1
+                    POP
+    catch java.lang.ClassNotFoundException -> E0
+    |               LDC_W "org.eclipse.jdt.debug.core.IJavaDebugTarget"
+    |               INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    DUP
+                    PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$1 Ljava/lang/Class;
+                    GOTO L1
+                E0: NEW java.lang.NoClassDefFoundError
+                    DUP_X1
+                    SWAP
+                    INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: INVOKEINTERFACE org.eclipse.debug.core.model.IDebugTarget.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaDebugTarget
+                    ASTORE 4
+                    ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaDebugTarget; javaTarget   (line 367)
+                    IFNULL L5
+                    ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaDebugTarget; javaTarget   (line 368)
+                    INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaDebugTarget.getThreads ()[Lorg/eclipse/debug/core/model/IThread;
+                    ASTORE 5
+                    ICONST_0   (line 369)
+                    ISTORE 6
+                    GOTO L4
+                L2: ALOAD 5     // [Lorg/eclipse/debug/core/model/IThread; threads   (line 370)
+                    ILOAD 6     // I i
+                    AALOAD
+                    ASTORE 7
+                    ALOAD 7     // Lorg/eclipse/debug/core/model/IThread; thread   (line 371)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IThread.isSuspended ()Z
+                    IFEQ L3
+                    ALOAD 7     // Lorg/eclipse/debug/core/model/IThread; thread   (line 372)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IThread.getTopStackFrame ()Lorg/eclipse/debug/core/model/IStackFrame;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaStackFrame
+                    ARETURN
+                L3: IINC 6 1     // I i   (line 369)
+                L4: ILOAD 6     // I i
+                    ALOAD 5     // [Lorg/eclipse/debug/core/model/IThread; threads
+                    ARRAYLENGTH
+                    IF_ICMPLT L2
+                L5: ACONST_NULL   (line 376)
+                    ARETURN
+  end private org.eclipse.jdt.debug.core.IJavaStackFrame getStackFrame(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException
+
+  private static org.eclipse.debug.core.IStatusHandler getStackFrameProvider():
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;   (line 384)
+                    IFNONNULL L0
+                    INVOKESTATIC org.eclipse.debug.core.DebugPlugin.getDefault ()Lorg/eclipse/debug/core/DebugPlugin;   (line 385)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.STATUS_GET_EVALUATION_FRAME Lorg/eclipse/core/runtime/IStatus;
+                    INVOKEVIRTUAL org.eclipse.debug.core.DebugPlugin.getStatusHandler (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/debug/core/IStatusHandler;
+                    PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;
+                L0: GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;   (line 387)
+                    ARETURN
+  end private static org.eclipse.debug.core.IStatusHandler getStackFrameProvider()
+
+  public boolean isSubtypes():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 395)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+                    IRETURN
+  end public boolean isSubtypes()
+
+  public void setSubtypes(boolean):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 403)
+                    ILOAD_1     // Z subtypes
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+                    RETURN   (line 404)
+  end public void setSubtypes(boolean)
+
+  public String getQualifiedTypeName():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 411)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    ARETURN
+  end public String getQualifiedTypeName()
+
+  public void setType(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 418)
+                    ALOAD_1     // Ljava/lang/String; type
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    RETURN   (line 419)
+  end public void setType(String)
+
+  public String getValue():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 425)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+                    ARETURN
+  end public String getValue()
+
+  public void setValue(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 432)
+                    ALOAD_1     // Ljava/lang/String; value
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+                    RETURN   (line 433)
+  end public void setValue(String)
+
+  public String[][] getVariables():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 439)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+                    ARETURN
+  end public String[][] getVariables()
+
+  public void setVariables(String[][]):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 446)
+                    ALOAD_1     // [[Ljava/lang/String; variables
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+                    RETURN   (line 447)
+  end public void setVariables(String[][])
+
+  public void setDescription(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 453)
+                    ALOAD_1     // Ljava/lang/String; description
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    RETURN   (line 454)
+  end public void setDescription(String)
+
+  public String getDescription(org.eclipse.debug.core.model.IValue):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 460)
+                    INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String getDescription(org.eclipse.debug.core.model.IValue)
+
+  public String getDescription():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 467)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    ARETURN
+  end public String getDescription()
+
+  public boolean isContributed():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 476)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean isContributed()
+
+  public String getContributingPluginId():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 486)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+                    ARETURN
+  end public String getContributingPluginId()
+
+  public String getId():
+                    NEW java.lang.StringBuffer   (line 493)
+                    DUP
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuffer.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getId()
+
+end public class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:121)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:151)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:245)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:126)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:575)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:550)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:481)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassName(ClasspathManager.java:460)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:447)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.initPluginContributedJavaLogicalStructure(JavaLogicalStructures.java:142)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.<clinit>(JavaLogicalStructures.java:99)
+	... 13 more
+
+!ENTRY org.eclipse.debug.core 4 120 2012-09-21 17:54:03.593
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.activate(JavaDebugOptionsManager.java:668)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchChanged(JavaDebugOptionsManager.java:683)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager.launchAdded(JavaDebugOptionsManager.java:677)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.run(LaunchManager.java:447)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchNotifier.notify(LaunchManager.java:435)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:997)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:695)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:842)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:924)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1128)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.aspectj.bridge.AbortException: trouble in: 
+public class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure extends java.lang.Object implements org.eclipse.debug.core.ILogicalStructureType:
+  private static org.eclipse.debug.core.IStatusHandler fgStackFrameProvider
+  private String fType
+  private boolean fSubtypes
+  private String fValue
+  private String fDescription
+  private String[][] fVariables
+  private String fContributingPluginId
+  static Class class$0 [Synthetic]
+  static Class class$1 [Synthetic]
+  public void <init>(String, boolean, String, String, String[][]):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 181)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String[][]))
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 80)
+    |               ACONST_NULL
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 182)
+    |               ALOAD_1     // Ljava/lang/String; type
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 183)
+    |               ILOAD_2     // Z subtypes
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 184)
+    |               ALOAD_3     // Ljava/lang/String; value
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 185)
+    |               ALOAD 4     // Ljava/lang/String; description
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 186)
+    |               ALOAD 5     // [[Ljava/lang/String; variables
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               RETURN   (line 187)
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String[][]))
+  end public void <init>(String, boolean, String, String, String[][])
+
+  public void <init>(org.eclipse.core.runtime.IConfigurationElement) throws org.eclipse.core.runtime.CoreException:
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 192)
+                    INVOKESPECIAL java.lang.Object.<init> ()V
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(org.eclipse.core.runtime.IConfigurationElement))
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 80)
+    |               ACONST_NULL
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 193)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "type"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 194)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               IFNONNULL L0
+    |               NEW org.eclipse.core.runtime.CoreException   (line 195)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_0 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L0: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 197)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "subtypes"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | method-call(java.lang.Boolean java.lang.Boolean.valueOf(java.lang.String))
+    | |             INVOKESTATIC java.lang.Boolean.valueOf (Ljava/lang/String;)Ljava/lang/Boolean;
+    | method-call(java.lang.Boolean java.lang.Boolean.valueOf(java.lang.String))
+    | method-call(boolean java.lang.Boolean.booleanValue())
+    | |             INVOKEVIRTUAL java.lang.Boolean.booleanValue ()Z
+    | method-call(boolean java.lang.Boolean.booleanValue())
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 198)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "value"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 199)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    |               LDC "description"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 200)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+    |               IFNONNULL L1
+    |               NEW org.eclipse.core.runtime.CoreException   (line 201)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_4 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L1: ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement   (line 203)
+    |               LDC "variable"
+    | method-call(org.eclipse.core.runtime.IConfigurationElement[] org.eclipse.core.runtime.IConfigurationElement.getChildren(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getChildren (Ljava/lang/String;)[Lorg/eclipse/core/runtime/IConfigurationElement;
+    | method-call(org.eclipse.core.runtime.IConfigurationElement[] org.eclipse.core.runtime.IConfigurationElement.getChildren(java.lang.String))
+    |               ASTORE_2
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 204)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    |               IFNONNULL L2
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements
+    |               ARRAYLENGTH
+    |               IFNE L2
+    |               NEW org.eclipse.core.runtime.CoreException   (line 205)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_1 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L2: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 207)
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements
+    |               ARRAYLENGTH
+    |               ICONST_2
+    |               MULTIANEWARRAY [[Ljava.lang.String;
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ICONST_0   (line 208)
+    |               ISTORE_3
+    |               GOTO L6
+    |           L3: ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements   (line 209)
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               LDC "name"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               ASTORE 4
+    |               ALOAD 4     // Ljava/lang/String; variableName   (line 210)
+    |               IFNONNULL L4
+    |               NEW org.eclipse.core.runtime.CoreException   (line 211)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_2 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L4: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 213)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               ICONST_0
+    |               ALOAD 4     // Ljava/lang/String; variableName
+    |               AASTORE
+    |               ALOAD_2     // [Lorg/eclipse/core/runtime/IConfigurationElement; variableElements   (line 214)
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               LDC "value"
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getAttribute (Ljava/lang/String;)Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IConfigurationElement.getAttribute(java.lang.String))
+    |               ASTORE 5
+    |               ALOAD 5     // Ljava/lang/String; variableValue   (line 215)
+    |               IFNONNULL L5
+    |               NEW org.eclipse.core.runtime.CoreException   (line 216)
+    |               DUP
+    |               NEW org.eclipse.core.runtime.Status
+    |               DUP
+    |               ICONST_4
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    | |             INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier())
+    |               BIPUSH 120
+    |               GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalStructuresMessages.JavaLogicalStructures_3 Ljava/lang/String;
+    |               ACONST_NULL
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.Status.<init> (ILjava/lang/String;ILjava/lang/String;Ljava/lang/Throwable;)V
+    | constructor-call(void org.eclipse.core.runtime.Status.<init>(int, java.lang.String, int, java.lang.String, java.lang.Throwable))
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    | |             INVOKESPECIAL org.eclipse.core.runtime.CoreException.<init> (Lorg/eclipse/core/runtime/IStatus;)V
+    | constructor-call(void org.eclipse.core.runtime.CoreException.<init>(org.eclipse.core.runtime.IStatus))
+    |               ATHROW
+    |           L5: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 218)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ILOAD_3     // I j
+    |               AALOAD
+    |               ICONST_1
+    |               ALOAD 5     // Ljava/lang/String; variableValue
+    |               AASTORE
+    |               IINC_3 1     // I j   (line 208)
+    |           L6: ILOAD_3     // I j
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L3
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 220)
+    |               ALOAD_1     // Lorg/eclipse/core/runtime/IConfigurationElement; configurationElement
+    | method-call(org.eclipse.core.runtime.IContributor org.eclipse.core.runtime.IConfigurationElement.getContributor())
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IConfigurationElement.getContributor ()Lorg/eclipse/core/runtime/IContributor;
+    | method-call(org.eclipse.core.runtime.IContributor org.eclipse.core.runtime.IConfigurationElement.getContributor())
+    | method-call(java.lang.String org.eclipse.core.runtime.IContributor.getName())
+    | |             INVOKEINTERFACE org.eclipse.core.runtime.IContributor.getName ()Ljava/lang/String;
+    | method-call(java.lang.String org.eclipse.core.runtime.IContributor.getName())
+    |               PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+    |               RETURN   (line 221)
+    constructor-execution(void org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.<init>(org.eclipse.core.runtime.IConfigurationElement))
+  end public void <init>(org.eclipse.core.runtime.IConfigurationElement) throws org.eclipse.core.runtime.CoreException
+
+  public boolean providesLogicalStructure(org.eclipse.debug.core.model.IValue):
+    method-execution(boolean org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.providesLogicalStructure(org.eclipse.debug.core.model.IValue))
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 227)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaObject
+    |               IFNE L0
+    |               ICONST_0   (line 228)
+    |               IRETURN
+    |           L0: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 230)
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaObject
+    | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType (Lorg/eclipse/jdt/debug/core/IJavaObject;)Lorg/eclipse/jdt/debug/core/IJavaReferenceType;
+    | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    |               IFNULL L1
+    |               ICONST_1
+    |               IRETURN
+    |           L1: ICONST_0
+    |               IRETURN
+    method-execution(boolean org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.providesLogicalStructure(org.eclipse.debug.core.model.IValue))
+  end public boolean providesLogicalStructure(org.eclipse.debug.core.model.IValue)
+
+  public org.eclipse.debug.core.model.IValue getLogicalStructure(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException:
+    method-execution(org.eclipse.debug.core.model.IValue org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(org.eclipse.debug.core.model.IValue))
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 237)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaObject
+    |               IFNE L0
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 238)
+    |               ARETURN
+    |           L0: ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 240)
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaObject
+    |               ASTORE_2
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 242)
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | | |           INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType (Lorg/eclipse/jdt/debug/core/IJavaObject;)Lorg/eclipse/jdt/debug/core/IJavaReferenceType;
+    | | method-call(org.eclipse.jdt.debug.core.IJavaReferenceType org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getType(org.eclipse.jdt.debug.core.IJavaObject))
+    | |             ASTORE_3
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type   (line 243)
+    | |             IFNONNULL L1
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 244)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |         L1: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 246)
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | | method-call(org.eclipse.jdt.debug.core.IJavaStackFrame org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame(org.eclipse.debug.core.model.IValue))
+    | | |           INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame (Lorg/eclipse/debug/core/model/IValue;)Lorg/eclipse/jdt/debug/core/IJavaStackFrame;
+    | | method-call(org.eclipse.jdt.debug.core.IJavaStackFrame org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrame(org.eclipse.debug.core.model.IValue))
+    | |             ASTORE 4
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 247)
+    | |             IFNONNULL L2
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 248)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |         L2: ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue   (line 252)
+    | | method-call(org.eclipse.debug.core.ILaunch org.eclipse.jdt.debug.core.IJavaObject.getLaunch())
+    | | |           INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaObject.getLaunch ()Lorg/eclipse/debug/core/ILaunch;
+    | | method-call(org.eclipse.debug.core.ILaunch org.eclipse.jdt.debug.core.IJavaObject.getLaunch())
+    | | method-call(org.eclipse.debug.core.model.ISourceLocator org.eclipse.debug.core.ILaunch.getSourceLocator())
+    | | |           INVOKEINTERFACE org.eclipse.debug.core.ILaunch.getSourceLocator ()Lorg/eclipse/debug/core/model/ISourceLocator;
+    | | method-call(org.eclipse.debug.core.model.ISourceLocator org.eclipse.debug.core.ILaunch.getSourceLocator())
+    | |             ASTORE 5
+    | |             ACONST_NULL   (line 253)
+    | |             ASTORE 6
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 254)
+    | |             INSTANCEOF org.eclipse.debug.core.sourcelookup.ISourceLookupDirector
+    | |             IFEQ L5
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type   (line 255)
+    | |             ACONST_NULL
+    | | method-call(java.lang.String[] org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths(java.lang.String))
+    | | |           INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths (Ljava/lang/String;)[Ljava/lang/String;
+    | | method-call(java.lang.String[] org.eclipse.jdt.debug.core.IJavaReferenceType.getSourcePaths(java.lang.String))
+    | |             ASTORE 7
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths   (line 256)
+    | |             IFNULL L3
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths
+    | |             ARRAYLENGTH
+    | |             IFLE L3
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 257)
+    | |             CHECKCAST org.eclipse.debug.core.sourcelookup.ISourceLookupDirector
+    | |             ALOAD 7     // [Ljava/lang/String; sourcePaths
+    | |             ICONST_0
+    | |             AALOAD
+    | | method-call(java.lang.Object org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement(java.lang.Object))
+    | | |           INVOKEINTERFACE org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement (Ljava/lang/Object;)Ljava/lang/Object;
+    | | method-call(java.lang.Object org.eclipse.debug.core.sourcelookup.ISourceLookupDirector.getSourceElement(java.lang.Object))
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L3: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 259)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFNE L5
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement
+    | |             INSTANCEOF org.eclipse.core.runtime.IAdaptable
+    | |             IFEQ L5
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 260)
+    | |             CHECKCAST org.eclipse.core.runtime.IAdaptable
+    | |             GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             DUP
+    | |             IFNONNULL L4
+    | |             POP
+    | | catch java.lang.ClassNotFoundException -> E0
+    | | |           LDC "org.eclipse.jdt.core.IJavaElement"
+    | | |           INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    | | catch java.lang.ClassNotFoundException -> E0
+    | |             DUP
+    | |             PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             GOTO L4
+    | |         E0: NEW java.lang.NoClassDefFoundError
+    | |             DUP_X1
+    | |             SWAP
+    | |             INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+    | |             INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+    | |             ATHROW
+    | |         L4: INVOKEINTERFACE org.eclipse.core.runtime.IAdaptable.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L5: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 263)
+    | |             IFNONNULL L7
+    | |             ALOAD 5     // Lorg/eclipse/debug/core/model/ISourceLocator; locator   (line 264)
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.debug.core.model.ISourceLocator.getSourceElement (Lorg/eclipse/debug/core/model/IStackFrame;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 265)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFNE L7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement
+    | |             INSTANCEOF org.eclipse.core.runtime.IAdaptable
+    | |             IFEQ L7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 266)
+    | |             CHECKCAST org.eclipse.core.runtime.IAdaptable
+    | |             GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             DUP
+    | |             IFNONNULL L6
+    | |             POP
+    | | catch java.lang.ClassNotFoundException -> E1
+    | | |           LDC "org.eclipse.jdt.core.IJavaElement"
+    | | |           INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    | | catch java.lang.ClassNotFoundException -> E1
+    | |             DUP
+    | |             PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$0 Ljava/lang/Class;
+    | |             GOTO L6
+    | |         E1: NEW java.lang.NoClassDefFoundError
+    | |             DUP_X1
+    | |             SWAP
+    | |             INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+    | |             INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+    | |             ATHROW
+    | |         L6: INVOKEINTERFACE org.eclipse.core.runtime.IAdaptable.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+    | |             ASTORE 6     // Ljava/lang/Object; sourceElement
+    | |         L7: ACONST_NULL   (line 269)
+    | |             ASTORE 7
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 270)
+    | |             INSTANCEOF org.eclipse.jdt.core.IJavaElement
+    | |             IFEQ L8
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 271)
+    | |             CHECKCAST org.eclipse.jdt.core.IJavaElement
+    | |             INVOKEINTERFACE org.eclipse.jdt.core.IJavaElement.getJavaProject ()Lorg/eclipse/jdt/core/IJavaProject;
+    | |             ASTORE 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |             GOTO L9
+    | |         L8: ALOAD 6     // Ljava/lang/Object; sourceElement   (line 272)
+    | |             INSTANCEOF org.eclipse.core.resources.IResource
+    | |             IFEQ L9
+    | |             ALOAD 6     // Ljava/lang/Object; sourceElement   (line 273)
+    | |             CHECKCAST org.eclipse.core.resources.IResource
+    | |             INVOKEINTERFACE org.eclipse.core.resources.IResource.getProject ()Lorg/eclipse/core/resources/IProject;
+    | |             INVOKESTATIC org.eclipse.jdt.core.JavaCore.create (Lorg/eclipse/core/resources/IProject;)Lorg/eclipse/jdt/core/IJavaProject;
+    | |             ASTORE 8
+    | |             ALOAD 8     // Lorg/eclipse/jdt/core/IJavaProject; resourceProject   (line 274)
+    | |             INVOKEINTERFACE org.eclipse.jdt.core.IJavaProject.exists ()Z
+    | |             IFEQ L9
+    | |             ALOAD 8     // Lorg/eclipse/jdt/core/IJavaProject; resourceProject   (line 275)
+    | |             ASTORE 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |         L9: ALOAD 7     // Lorg/eclipse/jdt/core/IJavaProject; project   (line 278)
+    | |             IFNONNULL L10
+    | |             ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 279)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |        L10: INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getDefault ()Lorg/eclipse/jdt/internal/debug/core/JDIDebugPlugin;   (line 282)
+    | |             ALOAD 7     // Lorg/eclipse/jdt/core/IJavaProject; project
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaStackFrame.getDebugTarget ()Lorg/eclipse/debug/core/model/IDebugTarget;
+    | |             CHECKCAST org.eclipse.jdt.debug.core.IJavaDebugTarget
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getEvaluationEngine (Lorg/eclipse/jdt/core/IJavaProject;Lorg/eclipse/jdt/debug/core/IJavaDebugTarget;)Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine;
+    | |             ASTORE 8
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock   (line 284)
+    | |             DUP
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaReferenceType; type
+    | |             ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame
+    | |             INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaStackFrame.getThread ()Lorg/eclipse/debug/core/model/IThread;
+    | |             CHECKCAST org.eclipse.jdt.debug.core.IJavaThread
+    | |             ALOAD 8     // Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine; evaluationEngine
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.<init> (Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure;Lorg/eclipse/jdt/debug/core/IJavaObject;Lorg/eclipse/jdt/debug/core/IJavaReferenceType;Lorg/eclipse/jdt/debug/core/IJavaThread;Lorg/eclipse/jdt/debug/eval/IAstEvaluationEngine;)V
+    | |             ASTORE 9
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 285)
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    | |             IFNONNULL L13
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 287)
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ARRAYLENGTH
+    | |             ANEWARRAY org.eclipse.jdt.debug.core.IJavaVariable
+    | |             ASTORE 10
+    | |             ICONST_0   (line 288)
+    | |             ISTORE 11
+    | |             GOTO L12
+    | |        L11: ALOAD 10     // [Lorg/eclipse/jdt/debug/core/IJavaVariable; variables   (line 289)
+    | |             ILOAD 11     // I i
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.JDIPlaceholderVariable
+    | |             DUP
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ILOAD 11     // I i
+    | |             AALOAD
+    | |             ICONST_0
+    | |             AALOAD
+    | |             ALOAD 9     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure$EvaluationBlock; evaluationBlock
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ILOAD 11     // I i
+    | |             AALOAD
+    | |             ICONST_1
+    | |             AALOAD
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate (Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.JDIPlaceholderVariable.<init> (Ljava/lang/String;Lorg/eclipse/jdt/debug/core/IJavaValue;Lorg/eclipse/jdt/debug/core/IJavaValue;)V
+    | |             AASTORE
+    | |             IINC 11 1     // I i   (line 288)
+    | |        L12: ILOAD 11     // I i
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+    | |             ARRAYLENGTH
+    | |             IF_ICMPLT L11
+    | |             NEW org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalObjectStructureValue   (line 291)
+    | |             DUP
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             ALOAD 10     // [Lorg/eclipse/jdt/debug/core/IJavaVariable; variables
+    | |             INVOKESPECIAL org.eclipse.jdt.internal.debug.core.logicalstructures.LogicalObjectStructureValue.<init> (Lorg/eclipse/jdt/debug/core/IJavaObject;[Lorg/eclipse/jdt/debug/core/IJavaVariable;)V
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    | |        L13: ALOAD 9     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure$EvaluationBlock; evaluationBlock   (line 294)
+    | |             ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    | |             GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure$EvaluationBlock.evaluate (Ljava/lang/String;)Lorg/eclipse/jdt/debug/core/IJavaValue;
+    | |             ASTORE 10
+    | |             ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 295)
+    | |             INSTANCEOF org.eclipse.jdt.internal.debug.core.model.JDIValue
+    | |             IFEQ L14
+    | |             ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 296)
+    | |             CHECKCAST org.eclipse.jdt.internal.debug.core.model.JDIValue
+    | |             ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaObject; javaValue
+    | |             INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.model.JDIValue.setLogicalParent (Lorg/eclipse/jdt/debug/core/IJavaValue;)V
+    | |        L14: ALOAD 10     // Lorg/eclipse/jdt/debug/core/IJavaValue; logicalValue   (line 298)
+    | catch org.eclipse.core.runtime.CoreException -> E6
+    |               ARETURN
+    |           E6: ASTORE_3   (line 300)
+    |               ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 301)
+    |               INVOKEVIRTUAL org.eclipse.core.runtime.CoreException.getStatus ()Lorg/eclipse/core/runtime/IStatus;
+    |               INVOKEINTERFACE org.eclipse.core.runtime.IStatus.getCode ()I
+    |               BIPUSH 100
+    |               IF_ICMPNE L15
+    |               ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 302)
+    |               ATHROW
+    |          L15: ALOAD_3     // Lorg/eclipse/core/runtime/CoreException; e   (line 304)
+    |               INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.log (Ljava/lang/Throwable;)V
+    |               ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 306)
+    |               ARETURN
+    method-execution(org.eclipse.debug.core.model.IValue org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getLogicalStructure(org.eclipse.debug.core.model.IValue))
+  end public org.eclipse.debug.core.model.IValue getLogicalStructure(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException
+
+  private org.eclipse.jdt.debug.core.IJavaReferenceType getType(org.eclipse.jdt.debug.core.IJavaObject):
+    catch org.eclipse.debug.core.DebugException -> E5
+    |               ALOAD_1     // Lorg/eclipse/jdt/debug/core/IJavaObject; value   (line 316)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaObject.getJavaType ()Lorg/eclipse/jdt/debug/core/IJavaType;
+    |               ASTORE_2
+    |               ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaType; type   (line 317)
+    |               INSTANCEOF org.eclipse.jdt.debug.core.IJavaClassType
+    |               IFNE L0
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ACONST_NULL   (line 318)
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L0: ALOAD_2     // Lorg/eclipse/jdt/debug/core/IJavaType; type   (line 320)
+    |               CHECKCAST org.eclipse.jdt.debug.core.IJavaClassType
+    |               ASTORE_3
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 321)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L1
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 323)
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L1: ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 325)
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+    |               IFNE L2
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ACONST_NULL   (line 327)
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L2: ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 329)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getSuperclass ()Lorg/eclipse/jdt/debug/core/IJavaClassType;
+    |               ASTORE 4
+    |               GOTO L5   (line 330)
+    |           L3: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 331)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L4
+    |               ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 333)
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L4: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 335)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getSuperclass ()Lorg/eclipse/jdt/debug/core/IJavaClassType;
+    |               ASTORE 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass
+    |           L5: ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaClassType; superClass   (line 330)
+    |               IFNONNULL L3
+    |               ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaClassType; classType   (line 337)
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaClassType.getAllInterfaces ()[Lorg/eclipse/jdt/debug/core/IJavaInterfaceType;
+    |               ASTORE 5
+    |               ICONST_0   (line 338)
+    |               ISTORE 6
+    |               GOTO L8
+    |           L6: ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces   (line 339)
+    |               ILOAD 6     // I i
+    |               AALOAD
+    |               INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaInterfaceType.getName ()Ljava/lang/String;
+    |               ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+    |               GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+    |               INVOKEVIRTUAL java.lang.String.equals (Ljava/lang/Object;)Z
+    |               IFEQ L7
+    |               ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces   (line 341)
+    |               ILOAD 6     // I i
+    |               AALOAD
+    catch org.eclipse.debug.core.DebugException -> E5
+                    ARETURN
+    catch org.eclipse.debug.core.DebugException -> E5
+    |           L7: IINC 6 1     // I i   (line 338)
+    |           L8: ILOAD 6     // I i
+    |               ALOAD 5     // [Lorg/eclipse/jdt/debug/core/IJavaInterfaceType; superInterfaces
+    |               ARRAYLENGTH
+    |               IF_ICMPLT L6
+    catch org.eclipse.debug.core.DebugException -> E5
+                    GOTO L9
+                E5: ASTORE_2   (line 344)
+                    ALOAD_2     // Lorg/eclipse/debug/core/DebugException; e   (line 345)
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.log (Ljava/lang/Throwable;)V
+                    ACONST_NULL   (line 346)
+                    ARETURN
+                L9: ACONST_NULL   (line 348)
+                    ARETURN
+  end private org.eclipse.jdt.debug.core.IJavaReferenceType getType(org.eclipse.jdt.debug.core.IJavaObject)
+
+  private org.eclipse.jdt.debug.core.IJavaStackFrame getStackFrame(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException:
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getStackFrameProvider ()Lorg/eclipse/debug/core/IStatusHandler;   (line 358)
+                    ASTORE_2
+                    ALOAD_2     // Lorg/eclipse/debug/core/IStatusHandler; handler   (line 359)
+                    IFNULL L0
+                    ALOAD_2     // Lorg/eclipse/debug/core/IStatusHandler; handler   (line 360)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.STATUS_GET_EVALUATION_FRAME Lorg/eclipse/core/runtime/IStatus;
+                    ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value
+                    INVOKEINTERFACE org.eclipse.debug.core.IStatusHandler.handleStatus (Lorg/eclipse/core/runtime/IStatus;Ljava/lang/Object;)Ljava/lang/Object;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaStackFrame
+                    ASTORE_3
+                    ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 361)
+                    IFNULL L0
+                    ALOAD_3     // Lorg/eclipse/jdt/debug/core/IJavaStackFrame; stackFrame   (line 362)
+                    ARETURN
+                L0: ALOAD_1     // Lorg/eclipse/debug/core/model/IValue; value   (line 365)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IValue.getDebugTarget ()Lorg/eclipse/debug/core/model/IDebugTarget;
+                    ASTORE_3
+                    ALOAD_3     // Lorg/eclipse/debug/core/model/IDebugTarget; target   (line 366)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$1 Ljava/lang/Class;
+                    DUP
+                    IFNONNULL L1
+                    POP
+    catch java.lang.ClassNotFoundException -> E0
+    |               LDC_W "org.eclipse.jdt.debug.core.IJavaDebugTarget"
+    |               INVOKESTATIC java.lang.Class.forName (Ljava/lang/String;)Ljava/lang/Class;
+    catch java.lang.ClassNotFoundException -> E0
+                    DUP
+                    PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.class$1 Ljava/lang/Class;
+                    GOTO L1
+                E0: NEW java.lang.NoClassDefFoundError
+                    DUP_X1
+                    SWAP
+                    INVOKEVIRTUAL java.lang.Throwable.getMessage ()Ljava/lang/String;
+                    INVOKESPECIAL java.lang.NoClassDefFoundError.<init> (Ljava/lang/String;)V
+                    ATHROW
+                L1: INVOKEINTERFACE org.eclipse.debug.core.model.IDebugTarget.getAdapter (Ljava/lang/Class;)Ljava/lang/Object;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaDebugTarget
+                    ASTORE 4
+                    ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaDebugTarget; javaTarget   (line 367)
+                    IFNULL L5
+                    ALOAD 4     // Lorg/eclipse/jdt/debug/core/IJavaDebugTarget; javaTarget   (line 368)
+                    INVOKEINTERFACE org.eclipse.jdt.debug.core.IJavaDebugTarget.getThreads ()[Lorg/eclipse/debug/core/model/IThread;
+                    ASTORE 5
+                    ICONST_0   (line 369)
+                    ISTORE 6
+                    GOTO L4
+                L2: ALOAD 5     // [Lorg/eclipse/debug/core/model/IThread; threads   (line 370)
+                    ILOAD 6     // I i
+                    AALOAD
+                    ASTORE 7
+                    ALOAD 7     // Lorg/eclipse/debug/core/model/IThread; thread   (line 371)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IThread.isSuspended ()Z
+                    IFEQ L3
+                    ALOAD 7     // Lorg/eclipse/debug/core/model/IThread; thread   (line 372)
+                    INVOKEINTERFACE org.eclipse.debug.core.model.IThread.getTopStackFrame ()Lorg/eclipse/debug/core/model/IStackFrame;
+                    CHECKCAST org.eclipse.jdt.debug.core.IJavaStackFrame
+                    ARETURN
+                L3: IINC 6 1     // I i   (line 369)
+                L4: ILOAD 6     // I i
+                    ALOAD 5     // [Lorg/eclipse/debug/core/model/IThread; threads
+                    ARRAYLENGTH
+                    IF_ICMPLT L2
+                L5: ACONST_NULL   (line 376)
+                    ARETURN
+  end private org.eclipse.jdt.debug.core.IJavaStackFrame getStackFrame(org.eclipse.debug.core.model.IValue) throws org.eclipse.core.runtime.CoreException
+
+  private static org.eclipse.debug.core.IStatusHandler getStackFrameProvider():
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;   (line 384)
+                    IFNONNULL L0
+                    INVOKESTATIC org.eclipse.debug.core.DebugPlugin.getDefault ()Lorg/eclipse/debug/core/DebugPlugin;   (line 385)
+                    GETSTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.STATUS_GET_EVALUATION_FRAME Lorg/eclipse/core/runtime/IStatus;
+                    INVOKEVIRTUAL org.eclipse.debug.core.DebugPlugin.getStatusHandler (Lorg/eclipse/core/runtime/IStatus;)Lorg/eclipse/debug/core/IStatusHandler;
+                    PUTSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;
+                L0: GETSTATIC org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fgStackFrameProvider Lorg/eclipse/debug/core/IStatusHandler;   (line 387)
+                    ARETURN
+  end private static org.eclipse.debug.core.IStatusHandler getStackFrameProvider()
+
+  public boolean isSubtypes():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 395)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+                    IRETURN
+  end public boolean isSubtypes()
+
+  public void setSubtypes(boolean):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 403)
+                    ILOAD_1     // Z subtypes
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fSubtypes Z
+                    RETURN   (line 404)
+  end public void setSubtypes(boolean)
+
+  public String getQualifiedTypeName():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 411)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    ARETURN
+  end public String getQualifiedTypeName()
+
+  public void setType(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 418)
+                    ALOAD_1     // Ljava/lang/String; type
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    RETURN   (line 419)
+  end public void setType(String)
+
+  public String getValue():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 425)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+                    ARETURN
+  end public String getValue()
+
+  public void setValue(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 432)
+                    ALOAD_1     // Ljava/lang/String; value
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fValue Ljava/lang/String;
+                    RETURN   (line 433)
+  end public void setValue(String)
+
+  public String[][] getVariables():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 439)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+                    ARETURN
+  end public String[][] getVariables()
+
+  public void setVariables(String[][]):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 446)
+                    ALOAD_1     // [[Ljava/lang/String; variables
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fVariables [[Ljava/lang/String;
+                    RETURN   (line 447)
+  end public void setVariables(String[][])
+
+  public void setDescription(String):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 453)
+                    ALOAD_1     // Ljava/lang/String; description
+                    PUTFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    RETURN   (line 454)
+  end public void setDescription(String)
+
+  public String getDescription(org.eclipse.debug.core.model.IValue):
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 460)
+                    INVOKEVIRTUAL org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.getDescription ()Ljava/lang/String;
+                    ARETURN
+  end public String getDescription(org.eclipse.debug.core.model.IValue)
+
+  public String getDescription():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 467)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    ARETURN
+  end public String getDescription()
+
+  public boolean isContributed():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 476)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+                    IFNULL L0
+                    ICONST_1
+                    IRETURN
+                L0: ICONST_0
+                    IRETURN
+  end public boolean isContributed()
+
+  public String getContributingPluginId():
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this   (line 486)
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fContributingPluginId Ljava/lang/String;
+                    ARETURN
+  end public String getContributingPluginId()
+
+  public String getId():
+                    NEW java.lang.StringBuffer   (line 493)
+                    DUP
+                    INVOKESTATIC org.eclipse.jdt.internal.debug.core.JDIDebugPlugin.getUniqueIdentifier ()Ljava/lang/String;
+                    INVOKESTATIC java.lang.String.valueOf (Ljava/lang/Object;)Ljava/lang/String;
+                    INVOKESPECIAL java.lang.StringBuffer.<init> (Ljava/lang/String;)V
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fType Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    ALOAD_0     // Lorg/eclipse/jdt/internal/debug/core/logicalstructures/JavaLogicalStructure; this
+                    GETFIELD org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure.fDescription Ljava/lang/String;
+                    INVOKEVIRTUAL java.lang.StringBuffer.append (Ljava/lang/String;)Ljava/lang/StringBuffer;
+                    INVOKEVIRTUAL java.lang.StringBuffer.toString ()Ljava/lang/String;
+                    ARETURN
+  end public String getId()
+
+end public class org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructure
+
+	at org.aspectj.bridge.MessageWriter.handleMessage(MessageWriter.java:47)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageWriter.handleMessage(WeavingAdaptor.java:737)
+	at org.aspectj.weaver.tools.WeavingAdaptor$WeavingAdaptorMessageHolder.handleMessage(WeavingAdaptor.java:682)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:121)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:151)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:245)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:126)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:575)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:550)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:481)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassName(ClasspathManager.java:460)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:447)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.initPluginContributedJavaLogicalStructure(JavaLogicalStructures.java:142)
+	at org.eclipse.jdt.internal.debug.core.logicalstructures.JavaLogicalStructures.<clinit>(JavaLogicalStructures.java:99)
+	... 13 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2012-09-21 17:54:03.599
+!MESSAGE An internal error occurred during: "Initialize Java Debug Options".
+!STACK 0
+java.lang.NullPointerException
+	at org.aspectj.weaver.bcel.BcelWorld.makeJoinPointSignatureForMethodInvocation(BcelWorld.java:631)
+	at org.aspectj.weaver.bcel.BcelShadow.makeMethodCall(BcelShadow.java:763)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.matchInvokeInstruction(BcelClassWeaver.java:3064)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2765)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2543)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:474)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:100)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1687)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1631)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1394)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1180)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:467)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:318)
+	at org.eclipse.equinox.weaving.aspectj.loadtime.OSGiWeavingAdaptor.weaveClass(OSGiWeavingAdaptor.java:121)
+	at org.eclipse.equinox.weaving.aspectj.AspectJWeavingService.preProcess(AspectJWeavingService.java:151)
+	at org.eclipse.equinox.weaving.adaptors.WeavingAdaptor.weaveClass(WeavingAdaptor.java:245)
+	at org.eclipse.equinox.weaving.hooks.WeavingHook.processClass(WeavingHook.java:126)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:575)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:550)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:481)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassName(ClasspathManager.java:460)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:447)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.defineClass(DefaultClassLoader.java:188)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.defineClass(ClasspathManager.java:580)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findClassImpl(ClasspathManager.java:550)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClassImpl(ClasspathManager.java:481)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass_LockClassName(ClasspathManager.java:460)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:447)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	at org.eclipse.jdt.debug.core.JDIDebugModel.createExceptionBreakpoint(JDIDebugModel.java:437)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugOptionsManager$InitJob.run(JavaDebugOptionsManager.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:51.993
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_large
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:51.994
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_medium
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:51.995
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_small
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:52.002
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_large
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:52.003
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_medium
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:52.003
+!MESSAGE Warning: Ignoring name conflict in resource file for name padding_small
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:52.012
+!MESSAGE Warning: Ignoring name conflict in resource file for name hello_world
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-09-21 18:05:52.013
+!MESSAGE Warning: Ignoring name conflict in resource file for name menu_settings
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-09-21 18:37:18.106
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.scala-ide.org/releases/2.0.0-beta.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:391)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:115)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:100)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-09-21 18:37:18.107
+!MESSAGE No repository found at http://download.scala-ide.org/releases/2.0.0-beta.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2012-09-21 18:37:36.793
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at jar:file:/C:/Users/Kristof/Downloads/site-1.6.17.zip!/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:391)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:675)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:115)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:100)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:82)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2012-09-21 18:37:36.794
+!MESSAGE No repository found at jar:file:/C:/Users/Kristof/Downloads/site-1.6.17.zip!/.
